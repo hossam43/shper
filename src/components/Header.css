@@ -1,0 +1,43 @@
+.header ul {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 10em;
+  width: 50%;
+  font-size: large;
+  color: white;
+  margin: 0;
+}
+
+.header li {
+  transition: transform 0.3s ease;
+}
+
+.header li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #ffd70e;
+}
+.logo {
+  margin-right: auto;
+  margin-left: 5em;
+}
+
+.logo-image {
+  width: 8em;
+  cursor: pointer;
+}
+.header {
+  background-color: black;
+  display: flex;
+}
+
+@media (min-width: 400px) {
+  .header ul {
+    display: flex; /* apply flex layout when screen is larger than 400px */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

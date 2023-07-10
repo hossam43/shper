@@ -1,0 +1,11 @@
+button {
+  color: red;
+  padding: 1em;
+}
+
+.settings-btns {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding-top: 2em;
+}

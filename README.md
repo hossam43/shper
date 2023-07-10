@@ -1,0 +1,1 @@
+n this example, we're creating a SphereGeometry with a radius of 1 and 32 segments in each direction. We're using a MeshPhongMaterial for the sphere, which allows for shading and specular highlights. We're also adding an AmbientLight and a PointLight to the scene to provide additional lighting and depth to the sphere.
