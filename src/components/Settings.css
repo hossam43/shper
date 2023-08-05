@@ -1,11 +1,54 @@
-button {
-  color: red;
-  padding: 1em;
-}
-
 .settings-btns {
   display: flex;
-  justify-content: center;
-  background-color: black;
-  padding-top: 2em;
+  justify-content: space-evenly;
+  background-color: #777777;
+  padding: 1em 0;
+  /* padding-top: 2em; */
+  width: 100%;
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #43cea2, #185a9d);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .settings-btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    font-size: 14px;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    width: 40%;
+  }
 }
